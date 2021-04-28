@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class JSONController {
 
-    @GetMapping("/message")
-    public JSON getJSON() {
+    @GetMapping("/")
+    public JSON getJSONResponseBody() {
         final JSON json = new JSON();
         json.setMessage("Welcome to the machine.");
         json.getTimestamp();
