@@ -7,6 +7,10 @@ public class JSON {
     private String message;
     private final Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
+    public String getMessage() {
+        return message;
+    }
+
     public void setMessage(String message) {
         this.message = message;
     }
